@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+         />
+
+    <Button
+        android:id="@+id/bt_main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="xmlClickEvent"
+        android:text="Change text"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/bt_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="xmlClickEvent"
+        android:text="Launch thread" />
+
+    <ProgressBar
+        android:id="@+id/pb_main"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/bt_async1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="xmlClickEvent"
+        tools:ignore=" OnClick"
+        android:text="Async Task"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_second"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:max="100"
+        android:visibility="gone"
+
+        />
+
+</LinearLayout>

@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             bt_main_text.id -> txtSwap()
             bt_thread.id -> threadLaunch()
             bt_async1.id -> asyncTask1(v)
+            bt_TH.id -> threadHandlerLaunch(v)
 
         }
     }
@@ -47,6 +48,15 @@ class MainActivity : AppCompatActivity() {
     private fun asyncTask1(v: View){
         val asyncrotask = AsTask(v, bt_async1, pb_second)
         asyncrotask.execute("paramètres --->", "<--- de traitement")
+    }
+
+    private fun threadHandlerLaunch(v : View){
+
+        val bckgTsk1 = BackgroundTask(v,bt_TH,pb_Th1);
+        bckgTsk1.start();
+        val bckgTsk2 = BackgroundTask(v,bt_TH,pb_Th2);
+        bckgTsk2.start();
+
     }
 
 

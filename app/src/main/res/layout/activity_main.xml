@@ -79,7 +79,7 @@
 
     <ProgressBar
         style="@android:style/Widget.ProgressBar.Horizontal"
-        android:id="@+id/pb_TH2"
+        android:id="@+id/pb_Th2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
